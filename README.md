@@ -30,3 +30,9 @@
 </body>
 </html>
 ```
+
+## Make minify version
+*Should be installed **uglifyjs** and **uglifycss***
+```sh
+make
+```
