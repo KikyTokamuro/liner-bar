@@ -66,7 +66,8 @@ const LinerBar = (function() {
 
             // Create title
             if ($this.data.title) {
-                title = createElementWithClass("p", "liner-bar-card-title");
+                title = createElementWithClass("p", "liner-bar-card-title"
+					       + ($this.data.dark ? " liner-bar-dark" : ""));
                 title.textContent = $this.data.title;
             }
 
@@ -95,7 +96,8 @@ const LinerBar = (function() {
                 legendItemDot.style.backgroundColor = item.color;
 
                 // Create legend name
-                let legendItemName = createElementWithClass("span", "liner-bar-legend-item-name");
+                let legendItemName = createElementWithClass("span", "liner-bar-legend-item-name"
+							    + ($this.data.dark ? " liner-bar-dark" : ""));
                 legendItemName.textContent = item.name;
 
                 // Create legend button
@@ -121,7 +123,8 @@ const LinerBar = (function() {
             barCardBody.appendChild(legend);
 
             // Create bar card
-            let barCard = createElementWithClass("div", "liner-bar-card");
+            let barCard = createElementWithClass("div", "liner-bar-card"
+						 + ($this.data.dark ? " liner-bar-dark" : ""));
             barCard.appendChild(barCardBody);
 
             // Get html from bar card
