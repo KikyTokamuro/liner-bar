@@ -1,3 +1,8 @@
+<p align="center"><img src="./img/logo.png"></p>
+<h4 align="center">Small horizontal bar chart library</h4>
+
+## Example
+```html
 <!DOCTYPE html>
 <head>
   <link rel="stylesheet" href="./liner-bar.css">
@@ -24,3 +29,4 @@
   </script>
 </body>
 </html>
+```
