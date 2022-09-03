@@ -147,7 +147,7 @@ const LinerBar = (function() {
                 .forEach((legendButton) => {
                     legendButton.addEventListener("click", () => {
                         const dataId = legendButton.getAttribute("data-target");
-                        const target = document.querySelector(`[data-id='${dataId}'`);
+                        const target = element.querySelector(`[data-id='${dataId}']`);
 
                         if (target.classList.contains("activated")) {
                             target.classList.remove("activated");
